@@ -22,30 +22,59 @@ $(function() {
 });
 
 
-var $accountDelete = $('#delete-account'),
-    $accountDeleteDialog = $('#confirm-delete');
- 
-      $accountDelete.on('click', function() {
-        $accountDeleteDialog[0].showModal();
-      });
- 
-      $('#cancel').on('click', function() {
-        $accountDeleteDialog[0].close();
-      });
 
+// For Reebok button
+var $ButOpenSiteReebok = $('#Reebok'),
+    $DialogPromoReebok = $('#dialog-reebok');
+
+$ButOpenSiteReebok.on('click', function() {
+    $DialogPromoReebok[0].showModal();
+});
+
+$('#cancelDialogReebok').on('click', function() {
+    $DialogPromoReebok[0].close();
+});
 
 var transition;
  
-$accountDelete.on('click', function() {
-    $accountDeleteDialog[0].showModal();
+$ButOpenSiteReebok.on('click', function() {
+    $DialogPromoReebok[0].showModal();
     transition = setTimeout(function() {
-        $accountDeleteDialog.addClass('dialog-scale');
+        $DialogPromoReebok.addClass('dialog-scale');
     }, 0.5);
 });
 
+$('#cancelDialogReebok').on('click', function() {
+    $DialogPromoReebok[0].close();
+    $DialogPromoReebok.removeClass('dialog-scale');
+    clearTimeout(transition);
+});
 
-$('#cancel').on('click', function() {
-    $accountDeleteDialog[0].close();
-    $accountDeleteDialog.removeClass('dialog-scale');
+
+
+// For Adidas button
+var $ButOpenSiteAdidas = $('#Adidas'),
+    $DialogPromoAdidas = $('#dialog-adidas');
+
+$ButOpenSiteAdidas.on('click', function() {
+    $DialogPromoAdidas[0].showModal();
+});
+
+$('#cancelDialogAdidas').on('click', function() {
+    $DialogPromoAdidas[0].close();
+});
+
+var transition;
+ 
+$ButOpenSiteAdidas.on('click', function() {
+    $DialogPromoAdidas[0].showModal();
+    transition = setTimeout(function() {
+        $DialogPromoAdidas.addClass('dialog-scale');
+    }, 0.5);
+});
+
+$('#cancelDialogAdidas').on('click', function() {
+    $DialogPromoAdidas[0].close();
+    $DialogPromoAdidas.removeClass('dialog-scale');
     clearTimeout(transition);
 });
