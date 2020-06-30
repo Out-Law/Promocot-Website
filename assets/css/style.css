@@ -486,3 +486,41 @@ footer a {
 footer a:hover {
     all: initial;
 }
+
+dialog {
+    position: fixed;
+    width: 600px;
+    height: 350px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.dialog-header {
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.btn-group-dialog {
+    margin-top: 30px;
+}
+
+.promokode {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    background: #FFA8A8;
+    padding: 25px;
+}
+
+.promokode-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
