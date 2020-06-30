@@ -1,0 +1,443 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Intro */
+.intro__Who_I {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/adidas-hollandse-nieuwe-interieur-10.jpg")center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+    text-align: center;
+}
+
+.intro__title_one {
+    color: #fff;
+    font-size: 75px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.intro__title_two {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.intro__button {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+.intro__suptitle {
+    margin-bottom: 20px;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+}
+
+
+
+
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 74px 42px;
+
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+}
+a:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46,229,157,.4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+/* Slider */    
+.slider {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__item {
+    width: 23%;
+    padding: 20px 0;
+    position: relative;
+
+    border-top: 3px solid #fff;
+    opacity: .7;
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider__item.active {
+    opacity: 1;
+}
+
+.slider__item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__num {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* Section */
+.section {
+    padding: 80px 0;  
+}
+
+.section_color {
+    padding: 80px 0; 
+    background-color: #FF4747;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 150px;
+    text-align: center;
+}
+
+.section__anim {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.section__text {
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.nav_o {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.nav__link_o {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #black;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link_o:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link_o:hover {
+    color: #ff0000;
+}
+
+.nav__link_o:hover:after,
+.nav__link_o.active:after {
+    opacity: 1;
+}
+
+.anim {
+    display: inline-block;
+    vertical-align: top
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.anim:hover {
+    transform: translateY(-7px);
+}
+
+/* Services */
+
+.services {
+    display: flex;
+     flex-wrap: wrap;
+}
+
+.services__item {
+    width: 33.33333%;
+    padding: 0 35px 40px 85px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.services__icon {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    z-index: 1;
+}
+
+.services__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.services__text {
+    font-size: 15px;
+    color: #999;
+}
+
+.services__item--border {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+
+
+
+
+
+
+/* End */
+
+.End__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.End__title {
+    color: black;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.End_btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 30px;
+
+    border: 3px solid black;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.End_btn:hover {
+    background-color: #18171c;
+    color: red;
+}
+                 
+/* Reviews */
+.reviews__item_right {
+    min-height: 210px;
+    padding-right: 500px;
+    position: relative;
+}
+
+.reviews__item_left {
+    min-height: 210px;
+    padding-left: 500px;
+    position: relative;
+}
+
+.reviews__photo_right {
+    display: block;
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.reviews__photo_left {
+    display: block;
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews__text_left {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: left;
+    
+    position: relative;
+    top: 100px;
+}
+
+.reviews__text_right {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
+   
+    position: relative;
+   top: 100px;
+}
+
+.reviews__text_bold_right {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: right;
+    
+    position: relative;
+    top: 75px;
+}
+
+.reviews__text_bold_left {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: left;
+    
+    position: relative;
+    top: 75px;
+}
+
+dialog {
+    visibility: hidden;
+    transform: scale(0.1);
+    transition: transform 200ms;
+}
+
+dialog.dialog-scale {
+    visibility: visible;
+    transform: scale(1);
+}
