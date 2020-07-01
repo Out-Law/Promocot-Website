@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Промокод+</title>
+    <title>Промокоды для Adidas и Reebok</title>
 </head>
 
 <body>
@@ -19,13 +19,13 @@
             <h class="intro__title_two">Бесплатные промокоды для Adidas и Reebok на скидки от 20%</h>
         </div>
         <div class="intro__button">
-            <a class ="btn_reebok" href="#">Reebok</a>
-            <a class="btn_adidas" href="#">Adidas</a>
+            <a class ="btn_reebok" data-scroll="#block-reebok">Reebok</a>
+            <a class="btn_adidas" data-scroll="#block-adidas">Adidas</a>
         </div>
     <div class="section__anim">
         <div href="#" class="anim" data-scroll="#Next">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_4Ps2n9.json"  background="transparent"  speed="1"  style="width: 115px; height: 115px;"  loop autoplay></lottie-player>
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_4Ps2n9.json" background="transparent" speed="1" style="width: 115px; height: 115px;" loop autoplay></lottie-player>
         </div>
      </div>
     </div>
@@ -39,15 +39,15 @@
                         <img class="reviews__photo_left" data-aos="fade-right" src="assets/images/coupon.png" alt="">
                         <div class="reviews__text_bold_left" data-aos="fade-left">Как я сэкономлю?</div>
                         <div class="reviews__text_left" data-aos="fade-left">
-                            <p>Всё просто! Выберите нужный магазин и вы перейдёте на его офиц   иальный сайт. Промокод будет применён автоматически.</p>
-                            <p>Когда будете делать заказ — увидите, что есть скидка!</p>
+                            <p>Всё просто! Выберите нужный магазин — перед вами появится промокод. Скопируйте его, а затем перейдите на официальный сайт магазина по кнопке, которая будет окне.</p>
+                            <p>Когда будете делать заказ — просто вставьте этот промокод в окошко, которое будет при оформлении заказа!</p>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
     
-    <section class="section_color">
+    <section class="section_color" id="block-adidas">
         <div class="container">
             <div class="section__header">
                 <div class="reviews__item_right">
@@ -62,7 +62,7 @@
         </div><!-- /.container -->
     </section>
     
-    <section class="section">
+    <section class="section" id="block-reebok">
         <div class="container">
             <div class="section__header">
                 <div class="reviews__item_left">
@@ -92,23 +92,23 @@
     <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp,telegram"></div>
 </footer>
 
-<dialog id="dialog-reebok" class="reebok-dialog">
-    <p class="dialog-header">Ваш промокод:</p>
-    <p class="promokode" id="promokodeID-reebok">Reebok123</p>
-    <p class="promokode-description">Нажмите на него, чтобы скопировать</p>
-    <div class="btn-group-dialog">
-        <button class="btn-open-site" id="openSiteReebok">На сайт Reebok</button>
-        <button class="btn-cancel" id="cancelDialogReebok">Назад</button>
-    </div>
-</dialog>
-
 <dialog id="dialog-adidas" class="adidas-dialog">
     <p class="dialog-header">Ваш промокод:</p>
     <p class="promokode" id="promokodeID-adidas">Adidas4567</p>
     <p class="promokode-description">Нажмите на него, чтобы скопировать</p>
     <div class="btn-group-dialog">
-        <button class="btn-open-site" id="openSiteAdidas">На сайт Adidas</button>
-        <button class="btn-cancel" id="cancelDialogAdidas">Назад</button>
+        <a href="https://www.adidas.ru" target="_blank" class="btn_project" id="openSiteAdidas">На сайт Adidas</a>
+        <a class="btn_project" id="cancelDialogAdidas">Назад</a>
+    </div>
+</dialog>
+
+<dialog id="dialog-reebok" class="reebok-dialog">
+    <p class="dialog-header">Ваш промокод:</p>
+    <p class="promokode" id="promokodeID-reebok">Reebok123</p>
+    <p class="promokode-description">Нажмите на него, чтобы скопировать</p>
+    <div class="btn-group-dialog">
+        <a href="https://www.reebok.ru" target="_blank" class="btn_project" id="openSiteReebok">На сайт Reebok</a>
+        <a class="btn_project" id="cancelDialogReebok">Назад</a>
     </div>
 </dialog>
 

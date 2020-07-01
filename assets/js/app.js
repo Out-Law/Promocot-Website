@@ -22,6 +22,24 @@ $(function() {
 });
 
 
+document.querySelector('#promokodeID-reebok').addEventListener(
+  'click',
+  async (event) => {
+    const code = event.target.innerText;
+    await navigator.clipboard.writeText(code);
+    alert(`Промокод ${code} скопирован!`);
+  }
+);
+
+document.querySelector('#promokodeID-adidas').addEventListener(
+  'click',
+  async (event) => {
+    const code = event.target.innerText;
+    await navigator.clipboard.writeText(code);
+    alert(`Промокод ${code} скопирован!`);
+  }
+);
+
 
 // For Reebok button
 var $ButOpenSiteReebok = $('#Reebok'),
