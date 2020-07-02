@@ -2,8 +2,9 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #333;
+    overflow-x: hidden;
 }
 
 *,
@@ -16,19 +17,94 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-
-/* Container */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+.title_cover {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 80vw;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: #FFFFFF; 
 }
 
+.block-1 {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.text_about {
+    width: 30vw;
+    margin-left: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    color: #4F5665;
+}
 
-/* Intro */
-.intro__Who_I {
+#catch {
+    all: initial;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #4F5665;
+}
+
+.block-about-color {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2888FF;
+    color: #FFFFFF;
+}
+
+.block-about-with-photo {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.text_block {
+    width: 80vw;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.text_block_with_photo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+.block-intro {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -36,31 +112,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     position: relative;
 
-    background: url("../images/adidas-hollandse-nieuwe-interieur-10.jpg") center no-repeat;
+    background: url("../images/adidas_shop.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-}
-
-.intro__inner {
-    width: 100%;
-    max-width: 880px;
-    margin: 0 auto;
-    margin-bottom: 20vh;
-    text-align: center;
-}
-
-.intro__title_one {
-    color: #fff;
-    font-size: 75px;
-    font-weight: 300;
-    line-height: 1;
-}
-
-.intro__title_two {
-    color: #fff;
-    font-size: 26px;
-    font-weight: 100;
-    line-height: 1;
 }
 
 .intro__button {
@@ -68,22 +122,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 880px;
     margin: 0 auto;
     margin-bottom: 25px;
-
     text-align: center;
-}
-
-/* Button */
-.btn {
-    display: inline-block;
-    vertical-align: top;
-    padding: 74px 42px;
-
-
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 /* Button Reebok */
@@ -107,6 +146,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 8px 15px rgba(0,0,0,.1);
     transition: .3s;
 }
+
 .btn_reebok:hover {
     background: #FF4747;
     box-shadow: 0 15px 20px rgba(255,71,71,.4);
@@ -143,26 +183,8 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-7px);
 }
 
-
-/* Section */
-.section {
-    padding: 80px 0;  
-}
-
-.section_color {
-    padding: 80px 0; 
-    background-color: #FF4747;
-}
-
 #block-adidas {
     background-color: #4f5665;
-}
-
-.section__header {
-    width: 100%;
-    max-width: 950px;
-    margin: 0 auto 150px;
-    text-align: center;
 }
 
 .section__anim {
@@ -170,18 +192,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 950px;
     margin: 0 auto 25px;
     text-align: center;
-}
-
-.section__title {
-    font-size: 30px;
-    font-weight: 700;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
-.section__text {
-    font-size: 17px;
-    color: #FFFFFF;
 }
 
 /* Animation Button*/
@@ -194,53 +204,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .anim:hover {
     transform: translateY(-7px);
-}
-
-                 
-/* Reviews */
-.reviews__item_right {
-    min-height: 210px;
-    padding-right: 500px;
-    position: relative;
-}
-
-.reviews__item_left {
-    min-height: 210px;
-    padding-left: 500px;
-    position: relative;
-}
-
-.reviews__photo_right {
-    display: block;
-    width: 400px;
-    height: 400px;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.reviews__photo_left {
-    display: block;
-    width: 400px;
-    height: 400px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.reviews__text_left {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 30px;
-    text-align: left;
-    
-    position: relative;
-    top: 100px;
 }
 
 .reviews__text_right {
@@ -260,28 +223,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 15px 20px rgba(0,0,0,.4);
     color: white;
     transform: translateY(-7px);
-}
-
-.reviews__text_bold_right {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: right;
-    color: #FFFFFF;
-    position: relative;
-    top: 75px;
-}
-
-.reviews__text_bold_left {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: left;
-    
-    position: relative;
-    top: 75px;
 }
 
 footer {
@@ -379,26 +320,3 @@ dialog {
     color: #FFFFFF;
     transition: color .1s ease-in-out;
 }
-
-
-/* Copyright */    
-@media (max-width: 1150px) {
-
-    /* Intro */
-   
-    
-@media (max-width: 990px) {
-
-    /* Intro */
-    
-    
-@media (max-width: 770px) {
-
-    /* Intro */
-   
-    
-@media (max-width: 575px) {
-
-    /* Intro */
-   
-

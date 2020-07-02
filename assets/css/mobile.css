@@ -1,0 +1,94 @@
+@media(max-width: 1300px) {
+	.title_cover {
+	    font-size: 28px;
+	}
+}
+
+@media(max-width: 1080px) {
+	.block-1 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.block-about-with-photo {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.text_block_with_photo {
+		width: 100%;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+
+	.block-photo {
+		margin-left: auto;
+  		margin-right: auto;
+	    width: 200px;
+	    height: 200px;
+	}
+
+	.text_about {
+		margin-right: 0;
+		margin-left: auto;
+  		margin-right: auto;
+		width: 85vw;
+		margin-top: 10px;
+		text-align: center;
+	    font-size: 14px;
+	    line-height: 20px;
+	}
+}
+
+
+@media(max-width: 860px) {
+	.title_cover {
+	    font-size: 24px;
+	}
+
+	dialog {
+	    width: 320px;
+	    height: 210px;
+	}
+
+	.dialog-header {
+	    font-size: 18px;
+	    line-height: 21px;
+	}
+
+	.btn-group-dialog {
+	    margin-top: 15px;
+	}
+
+	.promokode {
+	    font-size: 18px;
+	    line-height: 21px;
+	    padding: 12px;
+	}
+
+	.promokode-description {
+	    font-size: 8px;
+	    line-height: 8px;
+	}
+
+	.btn_project {
+	    width: 80px;
+	    height: 25px;
+	    margin-left: 5px;
+	    margin-right: 5px;
+	    font-size: 8px;
+	}
+}
+
+@media(max-width: 480px) {
+	.title_cover {
+	    font-size: 18px;
+	}
+}
+
+@media(max-width: 380px) {
+	.title_cover {
+	    font-size: 14px;
+	    top: 30vh;
+	}
+}
