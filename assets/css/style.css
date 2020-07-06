@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 30px;
     color: #FFFFFF; 
 }
 
@@ -241,29 +241,6 @@ footer a:hover {
     all: initial;
 }
 
-dialog {
-    position: fixed;
-    width: 600px;
-    height: 380px;
-    text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.dialog-header {
-    font-size: 36px;
-    line-height: 42px;
-    color: #000000;
-}
-
-.btn-group-dialog {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .promokode {
     font-family: Roboto;
     font-style: normal;
@@ -283,40 +260,12 @@ dialog {
     line-height: 14px;
 }
 
-.btn_project {
-    width: 150px;
-    height: 45px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 2px solid #FF4747;
-    box-sizing: border-box;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #FF4747;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn_project:hover {
-    background-color: #FF4747;
-    color: #FFFFFF;
-    transition: color .1s ease-in-out;
-}
-
-.adidas-dialog .promokode {
-    background: #4f5665;   
-}
-
-.adidas-dialog .btn_project {
-    border: 2px solid #4f5665;
+#promokodeID-adidas {
     color: #4f5665;
+    background: #FFFFFF;
+    text-align: center;
 }
 
-.adidas-dialog .btn_project:hover {
-    background-color: #4f5665;
-    color: #FFFFFF;
-    transition: color .1s ease-in-out;
+#promokodeID-reebok {
+    text-align: center;
 }

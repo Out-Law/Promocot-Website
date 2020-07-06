@@ -1,6 +1,6 @@
 @media(max-width: 1300px) {
 	.title_cover {
-	    font-size: 28px;
+	    font-size: 26px;
 	}
 }
 
@@ -43,21 +43,7 @@
 
 @media(max-width: 860px) {
 	.title_cover {
-	    font-size: 24px;
-	}
-
-	dialog {
-	    width: 320px;
-	    height: 210px;
-	}
-
-	.dialog-header {
-	    font-size: 18px;
-	    line-height: 21px;
-	}
-
-	.btn-group-dialog {
-	    margin-top: 15px;
+	    font-size: 22px;
 	}
 
 	.promokode {
